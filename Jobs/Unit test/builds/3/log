@@ -1,54 +1,0 @@
-Started by user [8mha:////4K/zGbO55rl7woRFG/jwKxgCxNXHSQSlaXjlrpi5UCwMAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL93MSizEQApGSSL8AAAAA=[0mMaria Bruhanchik
-Running as SYSTEM
-Building on master in workspace C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins.jenkins\workspace\Unit test
-The recommended git tool is: NONE
-No credentials specified
- > git.exe rev-parse --is-inside-work-tree # timeout=10
-Fetching changes from the remote Git repository
- > git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
-Fetching upstream changes from https://github.com/vitalliuss/helloci
- > git.exe --version # timeout=10
- > git --version # 'git version 2.28.0.windows.1'
- > git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
- > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
-Checking out Revision 446ae5a4fb9798821be65628da0b587e4e1f04e3 (refs/remotes/origin/master)
- > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f 446ae5a4fb9798821be65628da0b587e4e1f04e3 # timeout=10
-Commit message: "mention cobertura issue in README"
- > git.exe rev-list --no-walk 446ae5a4fb9798821be65628da0b587e4e1f04e3 # timeout=10
-[Unit test] $ cmd.exe /C "c:\apache-maven-3.6.3\bin\mvn.cmd cobertura:cobertura && exit %%ERRORLEVEL%%"
-[INFO] Scanning for projects...
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/maven-metadata.xml
-Progress (1): 605 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/maven-metadata.xml (605 B at 619 B/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom
-Progress (1): 2.7/13 kBProgress (1): 5.5/13 kBProgress (1): 8.2/13 kBProgress (1): 11/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom (13 kB at 69 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
-Progress (1): 2.7/24 kBProgress (1): 5.5/24 kBProgress (1): 8.2/24 kBProgress (1): 11/24 kB Progress (1): 14/24 kBProgress (1): 16/24 kBProgress (1): 19/24 kBProgress (1): 22/24 kBProgress (1): 24 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 kB at 131 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
-Progress (1): 2.7/4.8 kBProgress (1): 4.8 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (4.8 kB at 39 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar
-Progress (1): 2.7/57 kBProgress (1): 5.5/57 kBProgress (1): 8.2/57 kBProgress (1): 11/57 kB Progress (1): 14/57 kBProgress (1): 16/57 kBProgress (1): 19/57 kBProgress (1): 22/57 kBProgress (1): 25/57 kBProgress (1): 27/57 kBProgress (1): 30/57 kBProgress (1): 33/57 kBProgress (1): 36/57 kBProgress (1): 38/57 kBProgress (1): 41/57 kBProgress (1): 44/57 kBProgress (1): 47/57 kBProgress (1): 49/57 kBProgress (1): 52/57 kBProgress (1): 55/57 kBProgress (1): 57 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar (57 kB at 294 kB/s)
-[INFO] 
-[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
-[INFO] Building Maven Stub Project (No POM) 1
-[INFO] --------------------------------[ pom ]---------------------------------
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.683 s
-[INFO] Finished at: 2020-09-14T15:34:39+03:00
-[INFO] ------------------------------------------------------------------------
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.codehaus.mojo:cobertura-maven-plugin:2.7:cobertura (default-cli): Goal requires a project to execute but there is no POM in this directory (C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins.jenkins\workspace\Unit test). Please verify you invoked Maven from the correct directory. -> [Help 1]
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[8mha:////4OXyDUgN3g5uIua/zyXlrAvKn1AmdDdGR0/ZQ5yW7mdRAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
-Build step '¬ызвать цели Maven верхнего уровн€  ' marked build as failure
-Recording test results
-ERROR: Step СPublish JUnit test result reportТ failed: Test reports were found but none of them are new. Did leafNodes run? 
-For example, C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins.jenkins\workspace\Unit test\Java\target\surefire-reports\TEST-com.github.vitalliuss.helloci.AppTest.xml is 49 секунд old
-
-Finished: FAILURE
