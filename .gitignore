@@ -4,6 +4,7 @@
 *.log
 *.ctxt
 *.iml
+*.idea/
 
 # Package Files #
 *.jar
